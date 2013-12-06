@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="Modifier la sensibilité de l'écran selon l'intensité du mouvement de la main (La valeur doit être superieure á 1. La valeur par défaut est 100)"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/sensibilite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:text="100"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/butoncancell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/sensibilite"
+            android:layout_below="@+id/sensibilite"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="Annuler"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/butonaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/butoncancell"
+            android:layout_alignBottom="@+id/butoncancell"
+            android:layout_alignLeft="@+id/sensibilite"
+            android:padding="10dp"
+            android:text="Accepter"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
